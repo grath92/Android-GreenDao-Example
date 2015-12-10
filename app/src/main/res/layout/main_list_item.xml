@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_clock"
+            android:layout_width="@dimen/img_view_size"
+            android:layout_height="@dimen/img_view_size"
+            android:src="@drawable/ic_task"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_date"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/some_txt"
+            android:textColor="@color/black_1"
+            android:textSize="@dimen/txt_small"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/some_txt"
+            android:textColor="@color/black_1"
+            android:textSize="@dimen/txt_small"
+            android:padding="@dimen/padding_normal"/>
+        <TextView
+            android:id="@+id/tv_task"
+            android:layout_toRightOf="@+id/iv_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:paddingLeft="@dimen/padding_normal"
+            android:text="@string/some_txt"
+            android:textColor="@color/black_1"
+            android:textSize="@dimen/txt_large"
+            android:textStyle="italic|bold"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

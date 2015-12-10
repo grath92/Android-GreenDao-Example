@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DaoTest</string>
+    <string name="to_do">To Doo</string>
+    <string name="task_detail">Task Detail</string>
+    <string name="some_txt">xxxxx</string>
+    <string name="add_task">Add Task</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="hint">Enter your task</string>
+</resources>

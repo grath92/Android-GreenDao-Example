@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/padding_normal"
+        android:text="@string/add_task"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_large"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/time"
+            android:textSize="@dimen/txt_normal"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/date"
+            android:textSize="@dimen/txt_normal"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/et_field"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size"
+            android:layout_marginTop="@dimen/padding_normal"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/hint"
+            android:padding="@dimen/padding_small"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="@dimen/padding_normal"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_normal"/>
+
+</LinearLayout>
